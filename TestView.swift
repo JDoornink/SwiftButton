@@ -27,9 +27,13 @@ class TestView: UIView {
         //we're going to do stuff here
         Bundle.main.loadNibNamed("TestView", owner:self, options:nil)
         addSubview(testView)
-        TestButton.isUserInteractionEnabled = true
-        //contentView.frame = self.bounds
-        //contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+
+        testView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            testView.topAnchor.constraint(equalTo: self.topAnchor),
+            testView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            testView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            testView.bottomAnchor.constraint(equalTo: self.bottomAnchor)])
     }
 
     @IBAction func toucheUpInsideAction(_ sender: Any) {

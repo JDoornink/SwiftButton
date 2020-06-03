@@ -25,18 +25,22 @@
                                 <rect key="frame" x="150" y="509" width="112" height="30"/>
                                 <state key="normal" title="Original Button"/>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MJE-77-OEQ" customClass="TestView" customModule="TestXIB4" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="45" width="413" height="367"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJE-77-OEQ" customClass="TestView" customModule="TestXIB4" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="367"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="367" id="YTX-Mv-JC1"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="MJE-77-OEQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1x6-b4-H6Y"/>
-                            <constraint firstItem="OiX-ya-hZE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dod-mY-yn5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MJE-77-OEQ" secondAttribute="trailing" id="7Yl-ng-A1c"/>
                             <constraint firstItem="SJY-HC-mAb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G6K-AA-iTF"/>
-                            <constraint firstItem="MJE-77-OEQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qmd-Kr-KMK"/>
+                            <constraint firstItem="MJE-77-OEQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IgR-yR-Pb2"/>
+                            <constraint firstItem="OiX-ya-hZE" firstAttribute="top" secondItem="MJE-77-OEQ" secondAttribute="bottom" constant="26.5" id="YoR-ck-SlQ"/>
                             <constraint firstItem="SJY-HC-mAb" firstAttribute="top" secondItem="OiX-ya-hZE" secondAttribute="bottom" constant="50.5" id="awB-zM-1h9"/>
+                            <constraint firstItem="MJE-77-OEQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gMS-nC-LXD"/>
                             <constraint firstItem="OiX-ya-hZE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qE0-Qx-dWh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
